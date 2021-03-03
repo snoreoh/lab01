@@ -85,7 +85,7 @@ So it's necessary to upload 'gpp' compiler:
 ```
 ```sh
 10.Command: 
-   $ du -ah
+  $ du -ah
 
 Part of the result: 
 460K	./lib/libboost_math_tr1.so.1.69.0
