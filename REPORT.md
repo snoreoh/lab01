@@ -17,19 +17,34 @@
 
 
 ##Выполнение:
+```bash
 1.Command:
    $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+```
+```sh
 2.Command:
   $ tar -xf boost_1_69_0.tar.gz
+```
+
+```sh
 3.Command:
   $ tree -L 1 OR $ find. -maxdepth 1 -type f | wc
+
 Result: 12;
+```
+```sh
 4.Command:
   $ tree OR $ find.  -type f | wc 
+  
 Result: 61192;
+```
+
+```sh
 5.For ".cpp": Result == 13774; Command: $ find. -type f -name "*.cpp" | wc
   For ".h": Result == 96; Command: $ find. -type f -name "*.h" | wc
   For !".h" and !".cpp": Result == 47122; Command: $ find. -type f -not -name "*.cpp" -not -name "*.h" | wc
+```
+```sh
 6.Command: $ find `pwd` -name "any.hpp"
 Part of the result: 
 /home/snoreoh/boost_1_69_0/boost/fusion/include/any.hpp
@@ -38,6 +53,8 @@ Part of the result:
 /home/snoreoh/boost_1_69_0/boost/type_erasure/any.hpp
 /home/snoreoh/boost_1_69_0/boost/hana/any.hpp
 /home/snoreoh/boost_1_69_0/boost/hana/fwd/any.hpp
+```
+```sh
 7.Command: $ grep -lR "boost::asio"
 Part of the result:
 boost_output/include/boost/process/io.hpp
@@ -48,14 +65,20 @@ boost_output/include/boost/process/async_pipe.hpp
 boost_output/include/boost/process/detail/windows/async_in.hpp
 boost_output/include/boost/process/detail/windows/async_out.hpp
 boost_output/include/boost/process/detail/windows/io_context_ref.hpp
+```
+```sh
 8.Command ./bootstrap.sh --prefix=boost_output from istruction throwed an error:
                                               Failed to build Boost.Build engine
 So it's necessary to upload 'gpp' compiler:
  $ sudo apt install build-essential
  $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
  $ sudo apt update
+```
+```sh
 9.Being in ~/boost_1_69_0/boost_output write:
   $ mv ~/boost-libs
+```
+```sh
 10.Command: du -ah
 Part of the result: 
 460K	./lib/libboost_math_tr1.so.1.69.0
@@ -64,7 +87,10 @@ Part of the result:
 76K	./lib/libboost_stacktrace_backtrace.so.1.69.0
 4,7M	./lib/libboost_wave.a
 104K	./lib/libboost_date_time.so.1.69.0
-10.Command: $ du -Sah | sort -rh | head -10
+```
+```sh
+11.Command: $ du -Sah | sort -rh | head -10
+
 Result:
 54M	./lib
 4,7M	./lib/libboost_wave.a
@@ -76,6 +102,7 @@ Result:
 3,1M	./lib/libboost_math_tr1.a
 2,7M	./lib/libboost_log_setup.a
 2,4M	./lib/libboost_unit_test_framework.a
+```
 
 
 
