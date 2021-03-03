@@ -80,7 +80,7 @@ So it's necessary to upload 'gpp' compiler:
  $ sudo apt update
 ```
 ```sh
-9.Being in ~/boost_1_69_0/boost_output write:
+9.Being in `~/boost_1_69_0/boost_output` write:
   $ mv ~/boost-libs
 ```
 ```sh
