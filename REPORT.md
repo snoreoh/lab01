@@ -1,6 +1,6 @@
 ## Домашняя работа #1
 
-##Задания:
+## Задания:
 
 - [x] 1. Скачайте библиотеку boost с помощью утилиты wget. Адрес для скачивания https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz.
 - [x] 2. Разархивируйте скаченный файл в директорию ~/boost_1_69_0
@@ -16,7 +16,7 @@
 - [x] 12. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 
-##Выполнение:
+## Выполнение:
 ```bash
 1.Command:
    $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
