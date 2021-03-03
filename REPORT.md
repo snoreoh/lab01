@@ -46,6 +46,7 @@ Result: 61192;
 ```
 ```sh
 6.Command: $ find `pwd` -name "any.hpp"
+
 Part of the result: 
 /home/snoreoh/boost_1_69_0/boost/fusion/include/any.hpp
 /home/snoreoh/boost_1_69_0/boost/fusion/algorithm/query/any.hpp
@@ -56,6 +57,7 @@ Part of the result:
 ```
 ```sh
 7.Command: $ grep -lR "boost::asio"
+
 Part of the result:
 boost_output/include/boost/process/io.hpp
 boost_output/include/boost/process/spawn.hpp
@@ -80,6 +82,7 @@ So it's necessary to upload 'gpp' compiler:
 ```
 ```sh
 10.Command: du -ah
+
 Part of the result: 
 460K	./lib/libboost_math_tr1.so.1.69.0
 120K	./lib/libboost_math_c99l.so.1.69.0
