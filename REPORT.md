@@ -19,7 +19,7 @@
 ## Выполнение:
 ```bash
 1.Command:
-   $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+  $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
 ```sh
 2.Command:
