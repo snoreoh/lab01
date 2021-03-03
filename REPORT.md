@@ -45,7 +45,8 @@ Result: 61192;
   For !".h" and !".cpp": Result == 47122; Command: $ find. -type f -not -name "*.cpp" -not -name "*.h" | wc
 ```
 ```sh
-6.Command: $ find `pwd` -name "any.hpp"
+6.Command: 
+  $ find `pwd` -name "any.hpp"
 
 Part of the result: 
 /home/snoreoh/boost_1_69_0/boost/fusion/include/any.hpp
@@ -56,7 +57,8 @@ Part of the result:
 /home/snoreoh/boost_1_69_0/boost/hana/fwd/any.hpp
 ```
 ```sh
-7.Command: $ grep -lR "boost::asio"
+7.Command: 
+  $ grep -lR "boost::asio"
 
 Part of the result:
 boost_output/include/boost/process/io.hpp
@@ -69,7 +71,7 @@ boost_output/include/boost/process/detail/windows/async_out.hpp
 boost_output/include/boost/process/detail/windows/io_context_ref.hpp
 ```
 ```sh
-8.Command ./bootstrap.sh --prefix=boost_output from istruction throwed an error:
+8.Command '$ ./bootstrap.sh --prefix=boost_output' from istruction throwed an error:
  Failed to build Boost.Build engine
  
 So it's necessary to upload 'gpp' compiler:
@@ -82,7 +84,8 @@ So it's necessary to upload 'gpp' compiler:
   $ mv ~/boost-libs
 ```
 ```sh
-10.Command: du -ah
+10.Command: 
+   $ du -ah
 
 Part of the result: 
 460K	./lib/libboost_math_tr1.so.1.69.0
@@ -93,7 +96,8 @@ Part of the result:
 104K	./lib/libboost_date_time.so.1.69.0
 ```
 ```sh
-11.Command: $ du -Sah | sort -rh | head -10
+11.Command: 
+  $ du -Sah | sort -rh | head -10
 
 Result:
 54M	./lib
