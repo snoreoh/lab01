@@ -68,7 +68,7 @@ boost_output/include/boost/process/detail/windows/io_context_ref.hpp
 ```
 ```sh
 8.Command ./bootstrap.sh --prefix=boost_output from istruction throwed an error:
-                                              Failed to build Boost.Build engine
+                                              -Failed to build Boost.Build engine
 So it's necessary to upload 'gpp' compiler:
  $ sudo apt install build-essential
  $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
