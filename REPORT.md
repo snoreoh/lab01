@@ -19,34 +19,35 @@
 ## Выполнение:
 ```bash
 1.Command:
-  $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+  $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz //скачивает файлы с сети 
 ```
 ```sh
 2.Command:
-  $ tar -xf boost_1_69_0.tar.gz
+  $ tar -xf boost_1_69_0.tar.gz // разархивирует файл
 ```
 
 ```sh
 3.Command:
-  $ tree -L 1 OR $ find. -maxdepth 1 -type f | wc
+  $ tree -L 1 OR $ find. -maxdepth 1 -type f | wc //отображают все файлы (tree +директории) в нынешней директории
 
 Result: 12;
 ```
 ```sh
 4.Command:
-  $ tree OR $ find.  -type f | wc 
+  $ tree OR $ find.  -type f | wc  //отображают все файлы (tree +дирекктории) рекурсивоно, начиная с текущей директории
   
 Result: 61192;
 ```
 
 ```sh
-5.For ".cpp": Result == 13774; Command: $ find. -type f -name "*.cpp" | wc
+5.For ".cpp": Result == 13774; Command: $ find. -type f -name "*.cpp" | wc 
   For ".h": Result == 96; Command: $ find. -type f -name "*.h" | wc
   For !".h" and !".cpp": Result == 47122; Command: $ find. -type f -not -name "*.cpp" -not -name "*.h" | wc
+  //find -name ищет файлы по определенному омени (с помощью -not -name ищет все файлы, не свзанные с именем)
 ```
 ```sh
 6.Command: 
-  $ find `pwd` -name "any.hpp"
+  $ find `pwd` -name "any.hpp"  //find `pwd` выводит путь до файла с определенным именем
 
 Part of the result: 
 /home/snoreoh/boost_1_69_0/boost/fusion/include/any.hpp
@@ -58,7 +59,7 @@ Part of the result:
 ```
 ```sh
 7.Command: 
-  $ grep -lR "boost::asio"
+  $ grep -lR "boost::asio" // grep выводит все файлы, которые содержат определенную строку
 
 Part of the result:
 boost_output/include/boost/process/io.hpp
@@ -81,11 +82,11 @@ So it's necessary to upload 'gpp' compiler:
 ```
 ```sh
 9.Being in `~/boost_1_69_0/boost_output` write:
-  $ mv ~/boost-libs
+  $ mv ~/boost-libs // mv перемещает все файлы из текущей директории в заданную
 ```
 ```sh
 10.Command: 
-  $ du -ah
+  $ du -ah // du выводит размер всех файлов в заданной директории
 
 Part of the result: 
 460K	./lib/libboost_math_tr1.so.1.69.0
@@ -97,7 +98,7 @@ Part of the result:
 ```
 ```sh
 11.Command: 
-  $ du -Sah | sort -rh | head -10
+  $ du -Sah | sort -rh | head -10 // du выводит размер всех файлов в заданной директории, sort сортирует их
 
 Result:
 54M	./lib
